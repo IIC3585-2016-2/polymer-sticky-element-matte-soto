@@ -1,0 +1,195 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="relative-sticky.html">
+
+<dom-module id="relative-sticky-demo">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        padding: 10px;
+      }
+      h1 {
+        margin: 0px;
+      }
+    </style>
+
+    <div class="row" style="width: 50%;">
+      <h1>Sticky element example</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales
+        vitae arcu eu consequat. Aenean tellus massa, gravida nec odio a, placerat
+        ullamcorper nunc. Integer eget ligula a libero vestibulum pulvinar. Donec
+        lacinia arcu vitae lorem fringilla ornare.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales
+        vitae arcu eu consequat. Aenean tellus massa, gravida nec odio a, placerat
+        ullamcorper nunc. Integer eget ligula a libero vestibulum pulvinar. Donec
+        lacinia arcu vitae lorem fringilla ornare.
+      </p>
+
+
+      <relative-sticky style="width: 100%;">
+        <div style="background-color: grey;">
+          <h1>This is the title</h1>
+          <p> A lot of content will be displayed </p>
+        </div>
+      </relative-sticky>
+
+
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales
+        vitae arcu eu consequat. Aenean tellus massa, gravida nec odio a, placerat
+        ullamcorper nunc. Integer eget ligula a libero vestibulum pulvinar. Donec
+        lacinia arcu vitae lorem fringilla ornare. Cum sociis natoque penatibus et
+         magnis dis parturient montes, nascetur ridiculus mus. Donec sed tincidunt
+         eros. Aliquam dolor est, dapibus vitae gravida nec, tempus sed nunc. Mauris
+         aliquam felis fermentum, pellentesque quam non, fringilla purus.
+
+         Fusce et tempor libero. Morbi tempus ante vitae enim pharetra sagittis.
+         Vivamus et vestibulum arcu. Phasellus vel dictum erat, faucibus varius elit.
+         Proin erat justo, commodo vitae gravida in, iaculis vel tellus. Mauris tempus
+         malesuada erat, pellentesque aliquet ex vehicula in. Donec tristique venenatis
+         lectus nec porttitor. Donec lacinia elit rutrum fermentum laoreet. Fusce
+         posuere vel felis a fringilla. Quisque ut lectus porta, dictum arcu volutpat,
+         egestas risus. Aenean rutrum molestie orci, quis consequat mi. In pulvinar
+         aliquam lacus, ut ullamcorper ante. Nulla dignissim aliquam urna at lacinia.
+         Vestibulum porta ante id dui blandit, eget tempus dolor vehicula. Cras et cursus mi.
+         Morbi sem lacus, fermentum nec venenatis ut, pharetra vel risus.
+
+         Proin nec ligula ut nibh dignissim mattis. Morbi condimentum eros vitae nisi
+         molestie aliquet nec nec enim. Cras molestie nisl ac risus venenatis tempor.
+         Aliquam erat volutpat. Fusce odio tortor, commodo nec tellus at, consectetur
+         euismod tortor. Pellentesque habitant morbi tristique senectus et netus et
+         malesuada fames ac turpis egestas. Quisque sed orci quam. Donec aliquam ligula
+         elit, sed placerat leo dapibus vel. Sed a varius metus. Sed non finibus augue.
+         Nam molestie fermentum mi, sed hendrerit lectus.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget mauris at
+        nunc sollicitudin cursus at ut quam. Donec in enim sit amet lorem pretium volutpat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in porta dui. Vivamus
+        nisi magna, mattis nec enim in, suscipit vulputate lectus. Praesent id tortor viverra,
+        pharetra elit eget, convallis eros. Class aptent taciti sociosqu ad litora torquent
+        per conubia nostra, per inceptos himenaeos. Pellentesque in ligula aliquet, imperdiet
+        felis eu, vulputate lorem. Nullam id volutpat arcu. Morbi dolor nisi, finibus eu hendrerit
+        at, imperdiet at metus. Sed non imperdiet mauris. Pellentesque sed rutrum ex. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ante
+        sem, pulvinar id quam eget, ultrices dignissim sapien.
+
+        Suspendisse luctus sed velit ultricies luctus. Duis lorem massa, blandit sit amet diam vel,
+        posuere semper leo. Sed fermentum mauris nunc, vitae vulputate nisl fringilla at.
+        Nam porttitor quam augue, et malesuada urna vehicula id. Nunc eu ex vel erat bibendum
+         ultricies. Nunc tempus, felis eget fringilla tempor, nulla dui hendrerit quam, quis
+         dignissim enim nisl sed purus. Aenean bibendum finibus sodales. Ut nec euismod tellus.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales
+      vitae arcu eu consequat. Aenean tellus massa, gravida nec odio a, placerat
+      ullamcorper nunc. Integer eget ligula a libero vestibulum pulvinar. Donec
+      lacinia arcu vitae lorem fringilla ornare. Cum sociis natoque penatibus et
+       magnis dis parturient montes, nascetur ridiculus mus. Donec sed tincidunt
+       eros. Aliquam dolor est, dapibus vitae gravida nec, tempus sed nunc. Mauris
+       aliquam felis fermentum, pellentesque quam non, fringilla purus.
+
+       Fusce et tempor libero. Morbi tempus ante vitae enim pharetra sagittis.
+       Vivamus et vestibulum arcu. Phasellus vel dictum erat, faucibus varius elit.
+       Proin erat justo, commodo vitae gravida in, iaculis vel tellus. Mauris tempus
+       malesuada erat, pellentesque aliquet ex vehicula in. Donec tristique venenatis
+       lectus nec porttitor. Donec lacinia elit rutrum fermentum laoreet. Fusce
+       posuere vel felis a fringilla. Quisque ut lectus porta, dictum arcu volutpat,
+       egestas risus. Aenean rutrum molestie orci, quis consequat mi. In pulvinar
+       aliquam lacus, ut ullamcorper ante. Nulla dignissim aliquam urna at lacinia.
+       Vestibulum porta ante id dui blandit, eget tempus dolor vehicula. Cras et cursus mi.
+       Morbi sem lacus, fermentum nec venenatis ut, pharetra vel risus.
+
+       Proin nec ligula ut nibh dignissim mattis. Morbi condimentum eros vitae nisi
+       molestie aliquet nec nec enim. Cras molestie nisl ac risus venenatis tempor.
+       Aliquam erat volutpat. Fusce odio tortor, commodo nec tellus at, consectetur
+       euismod tortor. Pellentesque habitant morbi tristique senectus et netus et
+       malesuada fames ac turpis egestas. Quisque sed orci quam. Donec aliquam ligula
+       elit, sed placerat leo dapibus vel. Sed a varius metus. Sed non finibus augue.
+       Nam molestie fermentum mi, sed hendrerit lectus.
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget mauris at
+      nunc sollicitudin cursus at ut quam. Donec in enim sit amet lorem pretium volutpat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in porta dui. Vivamus
+      nisi magna, mattis nec enim in, suscipit vulputate lectus. Praesent id tortor viverra,
+      pharetra elit eget, convallis eros. Class aptent taciti sociosqu ad litora torquent
+      per conubia nostra, per inceptos himenaeos. Pellentesque in ligula aliquet, imperdiet
+      felis eu, vulputate lorem. Nullam id volutpat arcu. Morbi dolor nisi, finibus eu hendrerit
+      at, imperdiet at metus. Sed non imperdiet mauris. Pellentesque sed rutrum ex. Class aptent
+      taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ante
+      sem, pulvinar id quam eget, ultrices dignissim sapien.
+
+      Suspendisse luctus sed velit ultricies luctus. Duis lorem massa, blandit sit amet diam vel,
+      posuere semper leo. Sed fermentum mauris nunc, vitae vulputate nisl fringilla at.
+      Nam porttitor quam augue, et malesuada urna vehicula id. Nunc eu ex vel erat bibendum
+       ultricies. Nunc tempus, felis eget fringilla tempor, nulla dui hendrerit quam, quis
+       dignissim enim nisl sed purus. Aenean bibendum finibus sodales. Ut nec euismod tellus.
+  </p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales
+    vitae arcu eu consequat. Aenean tellus massa, gravida nec odio a, placerat
+    ullamcorper nunc. Integer eget ligula a libero vestibulum pulvinar. Donec
+    lacinia arcu vitae lorem fringilla ornare. Cum sociis natoque penatibus et
+     magnis dis parturient montes, nascetur ridiculus mus. Donec sed tincidunt
+     eros. Aliquam dolor est, dapibus vitae gravida nec, tempus sed nunc. Mauris
+     aliquam felis fermentum, pellentesque quam non, fringilla purus.
+
+     Fusce et tempor libero. Morbi tempus ante vitae enim pharetra sagittis.
+     Vivamus et vestibulum arcu. Phasellus vel dictum erat, faucibus varius elit.
+     Proin erat justo, commodo vitae gravida in, iaculis vel tellus. Mauris tempus
+     malesuada erat, pellentesque aliquet ex vehicula in. Donec tristique venenatis
+     lectus nec porttitor. Donec lacinia elit rutrum fermentum laoreet. Fusce
+     posuere vel felis a fringilla. Quisque ut lectus porta, dictum arcu volutpat,
+     egestas risus. Aenean rutrum molestie orci, quis consequat mi. In pulvinar
+     aliquam lacus, ut ullamcorper ante. Nulla dignissim aliquam urna at lacinia.
+     Vestibulum porta ante id dui blandit, eget tempus dolor vehicula. Cras et cursus mi.
+     Morbi sem lacus, fermentum nec venenatis ut, pharetra vel risus.
+
+     Proin nec ligula ut nibh dignissim mattis. Morbi condimentum eros vitae nisi
+     molestie aliquet nec nec enim. Cras molestie nisl ac risus venenatis tempor.
+     Aliquam erat volutpat. Fusce odio tortor, commodo nec tellus at, consectetur
+     euismod tortor. Pellentesque habitant morbi tristique senectus et netus et
+     malesuada fames ac turpis egestas. Quisque sed orci quam. Donec aliquam ligula
+     elit, sed placerat leo dapibus vel. Sed a varius metus. Sed non finibus augue.
+     Nam molestie fermentum mi, sed hendrerit lectus.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget mauris at
+    nunc sollicitudin cursus at ut quam. Donec in enim sit amet lorem pretium volutpat.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in porta dui. Vivamus
+    nisi magna, mattis nec enim in, suscipit vulputate lectus. Praesent id tortor viverra,
+    pharetra elit eget, convallis eros. Class aptent taciti sociosqu ad litora torquent
+    per conubia nostra, per inceptos himenaeos. Pellentesque in ligula aliquet, imperdiet
+    felis eu, vulputate lorem. Nullam id volutpat arcu. Morbi dolor nisi, finibus eu hendrerit
+    at, imperdiet at metus. Sed non imperdiet mauris. Pellentesque sed rutrum ex. Class aptent
+    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ante
+    sem, pulvinar id quam eget, ultrices dignissim sapien.
+
+    Suspendisse luctus sed velit ultricies luctus. Duis lorem massa, blandit sit amet diam vel,
+    posuere semper leo. Sed fermentum mauris nunc, vitae vulputate nisl fringilla at.
+    Nam porttitor quam augue, et malesuada urna vehicula id. Nunc eu ex vel erat bibendum
+     ultricies. Nunc tempus, felis eget fringilla tempor, nulla dui hendrerit quam, quis
+     dignissim enim nisl sed purus. Aenean bibendum finibus sodales. Ut nec euismod tellus.
+</p>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'relative-sticky-demo'
+    });
+  </script>
+</dom-module>

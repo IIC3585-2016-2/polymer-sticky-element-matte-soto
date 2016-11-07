@@ -1,0 +1,48 @@
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+
+<dom-module id="relative-sticky">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div id="root">
+      <div id="container">
+        <content id="content"></content>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'relative-sticky',
+
+      ready: function() {
+
+        // Set the height to leave a empty space
+        const clientHeight = this.$.container.clientHeight;
+        this.$.root.style.height = clientHeight + 'px';
+
+        var doc = document.documentElement;
+
+        const initialTop = this.offsetTop;
+        const initialWidth = this.offsetWidth;
+
+        window.addEventListener("scroll", function() {
+          var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+
+          if (top > initialTop) {
+            this.$.container.style.position = 'fixed';
+            this.$.container.style.top = 0;
+            this.$.container.style.width = initialWidth + 'px';
+          } else {
+            this.$.container.style.position = 'relative';
+          }
+        }.bind(this));
+      }
+    });
+  </script>
+</dom-module>
